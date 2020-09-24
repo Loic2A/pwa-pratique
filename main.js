@@ -27,3 +27,10 @@ if(navigator.serviceWorker) {
         .register('sw.js')	
         .catch(err => console.error('service worker NON enregistré', err));	
 }
+
+//Cache
+if(window.caches) {
+    caches.open('veille-techno-1.0');
+    caches.open('other-1.0');
+    caches.keys().then(console.log);
+}
