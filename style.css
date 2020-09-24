@@ -2,13 +2,13 @@ body {
     background-color: #a0aec3;
 }
 .card{
-    width:30%;
+    width:50%;
     margin:15px;
     border: solid 1px #CCC;
     border-radius: 5px;
 }
 .row{
-    width: 40%;
+    width: 60%;
 }
 .row .col{
     background: #ccc;
