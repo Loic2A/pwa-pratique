@@ -146,4 +146,6 @@ self.addEventListener("notificationclick", evt => {
     } else{
         console.log("vous avez cliqué sur la notification (pas sur un bouton)");
     }
+    // 7.5 Fermer programmatiquement une notification
+    evt.notification.close(); 
 })
