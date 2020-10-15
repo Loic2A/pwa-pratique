@@ -37,9 +37,17 @@ if(window.Notification && window.Notification !== "denied"){
         // vérifie si la permission est acceptée par l'utilisateur
         // 3 valeurs possibles : default | granted | denied
         if(perm === "granted"){
-          	console.log("Notification acceptée");
+            
+            // 7.2 Option de la notification
+            const options = {
+                body : "Body de la notification",
+                icon : "images/icons/icon-72x72.png"
+            }
+ 
             // On crée une nouvelle notification
-            const notif = new Notification("Hello notification");
+            // 7.2 On passe les options en deuxième argument
+            const notif = new Notification("Hello notification", options);
+          
         }
         else{
             // Notification refusée
