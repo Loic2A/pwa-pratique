@@ -71,4 +71,13 @@ button {
 .row .col:hover{
     cursor: pointer;
     background: #B1DBF9;
-} */
+} 
+.card {
+	
+    max-width: 400px;
+	
+    width: 100%;
+	
+    margin-bottom: 10px;
+	
+}
